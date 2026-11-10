@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Orbitron", sans-serif;
+  background: radial-gradient(circle at 20% 20%, #0f0c29, #302b63, #24243e);
+  color: #00ffc3;
+  width: 360px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.glass-container {
+  width: 260px;
+  box-sizing: border-box;
+  /* text-align: center; */
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  color: #00fff7;
+  letter-spacing: 1px;
+}
+
+input[type="time"] {
+  padding: 10px;
+  font-size: 1rem;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #00ffc3;
+  color: #00ffc3;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  flex: 1;
+  margin: 5px;
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  background-color: transparent;
+  border: 1px solid #00ffc3;
+  color: #00ffc3;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+button:hover {
+  background-color: #00ffc3;
+  color: #000;
+  box-shadow:
+    0 0 12px #00ffc3,
+    0 0 30px #00ffc3;
+}
+
+button.reset {
+  border-color: #ff4e50;
+  color: #ff4e50;
+}
+
+button.reset:hover {
+  background-color: #ff4e50;
+  color: #000;
+  box-shadow:
+    0 0 12px #ff4e50,
+    0 0 30px #ff4e50;
+}
+
+.countdown {
+  margin-top: 25px;
+  font-size: 2.5rem;
+  color: #00ffc3;
+  letter-spacing: 3px;
+  text-shadow: 0 0 10px #00ffc3;
+}
+
+.note {
+  margin-top: 12px;
+  font-size: 0.8rem;
+  color: #ccc;
+  font-family: monospace;
+  opacity: 0.8;
+}
+
+.warning {
+  animation: blink 1s infinite;
+  text-shadow:
+    0 0 10px #00ffc3,
+    0 0 25px #00ffc3;
+}
+
+.overtime {
+  color: #ff4e50;
+  text-shadow:
+    0 0 10px #ff4e50,
+    0 0 25px #ff4e50;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0.3;
+  }
+}

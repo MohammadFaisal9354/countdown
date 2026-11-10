@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="glass-container">
+      <label for="startTime">Start Time</label>
+      <input type="time" id="startTime" required />
+      <div class="btn-group">
+        <button id="startBtn">Start</button>
+        <button id="resetBtn" class="reset">Reset</button>
+      </div>
+
+      <div class="countdown neon">
+        <span id="hours">--</span>:<span id="minutes">--</span>:<span
+          id="seconds"
+          >--</span
+        >
+      </div>
+      <div class="note" id="note"></div>
+      <div class="note" id="developedBy">Developed By Mohammad Faisal</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
